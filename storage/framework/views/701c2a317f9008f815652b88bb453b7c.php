@@ -55,7 +55,7 @@
                            <li><a href="<?php echo e('/about'); ?>">About</a></li>
                            <li><a href="<?php echo e(route('services.index')); ?>">Service</a></li>
                            
-                           <li class=" "><a href="<?php echo e("/portfolio"); ?>">Portfolio</a> 
+                           <li class=" "><a href="<?php echo e(route('portfolios.index')); ?>">Portfolio</a> 
                               
                            </li>
                            
@@ -65,9 +65,9 @@
                            <li><a href="<?php echo e('/contect'); ?>">Contact</a></li>
                            <li class="has-dropdown has-menu"><a href="#">More</a>
                               <ul class="submenu text-start">
+                                 <li><a href="<?php echo e(route('testimonials.index')); ?>">Testimonial</a></li>
                                  <li><a href="<?php echo e('/job'); ?>">Job</a></li>
                                  <li><a href="<?php echo e('/faq'); ?>">Faq</a></li>
-                                 <li><a href="<?php echo e('/testimonial'); ?>">Testimonial</a></li>
                                  
                                  
                                  
@@ -86,9 +86,7 @@
                   </div>
                </div>
                <div class="col-xl-2 col-lg-2">
-                  <div class="tp-menu-bar text-end">
-                     <button><i class="fal fa-bars"></i></button>
-                  </div>
+                  
                </div>
             </div>
          </div>

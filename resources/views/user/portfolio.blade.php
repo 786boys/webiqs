@@ -90,7 +90,7 @@
             <div class="row">
                <div class="col-xxl-12">
                   <div class="breadcrumb__content p-relative z-index-1">
-                     <h3 class="breadcrumb__title">Portfolio Full Width</h3>
+                     <h3 class="breadcrumb__title">Portfolio</h3>
                      <a href="{{'contect'}}" class="tp-btn-white-border">Lets work together <i class="far fa-arrow-right"></i></a>
                   </div>
                </div>
@@ -102,7 +102,7 @@
    <!-- project-area-start -->
    <div class="tp-project-area pt-120 pb-120 p-relative">
       <div class="container-fluid p-0">
-         <div class="row g-0 justify-content-center">
+         {{-- <div class="row g-0 justify-content-center">
             <div class="col-10 text-center">
                <div class="tp-project-tab-button masonary-menu mb-80">
                   <button class="active" data-filter="*"><span>Website</span></button>
@@ -112,16 +112,20 @@
                   <button data-filter=".cat5"><span>Branding Design</span></button>
                </div>
             </div>
-         </div>
+         </div> --}}
+
          <div class="row grid gx-0 port-space">
+            @foreach ($value as $item)
+                
+          
             <div class="col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat3">
               <div class="bp-project-item p-relative">
                   <div class="bp-project-img w-img fix">
-                     <img src="{{asset('user/assets/img/portfolio/port-10.jpg')}}" alt="">
+                   <img src="{{ asset('storage/'. $item->img) }}" class="img-fluid" />
                   </div>
                   <div class="bp-project-item-link">
                      <span>
-                         <a class="popup-image" href="{{asset('user/assets/img/portfolio/port-10.jpg')}}">
+                         <a class="popup-image" href="{{ asset('storage/'. $item->img) }}">
                            <svg width="107" height="107" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M0.224823 95.4633L11.3577 106.62C11.8638 107.127 14.9002 107.127 15.406 106.62L80.1796 43.2308C81.1916 42.2165 82.2038 41.7093 83.7219 41.7093C84.228 41.7093 85.2402 41.7093 85.746 42.2165C87.7702 42.7236 88.7822 44.7521 88.7822 46.7805V78.7286V79.2358H104.976C105.988 79.2358 106.494 79.2358 107 79.2358V1.64818C107 1.64818 107 1.64819 105.988 0.633841C104.976 -0.380504 105.482 0.126918 104.47 0.126918H28.5633C28.5633 0.633841 28.5633 1.14101 28.5633 2.66253V18.3826C28.5633 19.3967 28.5633 20.4111 28.5633 20.4111H60.9501C62.9743 20.4111 64.9984 21.4252 65.5043 23.4536C66.5163 25.482 66.0104 27.5105 64.4923 29.032L1.23705 91.9136C0.730947 92.4208 0.224823 92.928 0.224823 93.9421C-0.281034 94.9561 0.224823 94.9562 0.224823 95.4633Z" fill="currentColor"/>
                            </svg>
@@ -130,7 +134,8 @@
                   </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 grid-item cat5">
+            @endforeach
+            {{-- <div class="col-xl-6 col-lg-6 col-md-6 grid-item cat5">
               <div class="bp-project-item p-relative">
                   <div class="bp-project-img w-img fix">
                      <img src="{{asset('user/assets/img/portfolio/port-11.jpg.jpg')}}" alt="">
@@ -273,7 +278,7 @@
                       </span>
                    </div>
                </div>
-             </div>
+             </div> --}}
          </div>
          <div class="row g-0">
             <div class="col-12">

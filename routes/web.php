@@ -4,10 +4,19 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\UserPortfolioController;
 use App\Http\Controllers\UserServiceController;
+use App\Http\Controllers\testimonialController;
+use App\Http\Controllers\usertestimonialController;
 
 use App\Models\Servise;
 use App\Models\UserService;
+use App\Models\Portfolio;
+use App\Models\UserPortfolio;
+use App\Models\Testimonial;
+use App\Models\UserTestimonial;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,6 +35,10 @@ Route::get('/', function () {
 
 Route::resource('/admin/service', ServicesController::class);
 Route::resource('/services', UserServiceController::class);
+Route::resource('/admin/portfolio', PortfolioController::class);
+Route::resource('/portfolios', UserPortfolioController::class);
+Route::resource('/admin/testimonial', testimonialController::class);
+Route::resource('/testimonials', usertestimonialController::class);
 
 
 Route::get('/dashboard', function () {
@@ -75,9 +88,6 @@ Route::get('/contect', function () {
     return view('user.contact');
 });
 
-Route::get('/portfolio', function () {
-    return view('user.portfolio');
-});
 
 Route::get('/portfolioDetail', function () {
     return view('user.portfolio-details');
@@ -138,18 +148,4 @@ Route::get('/price', function () {
 Route::get('/testimonial', function () {
     return view('user.testimonial');
 });
-Route::get('/service-details', function () {
-    return view('user.service-details');
-});
-Route::get('/service-1', function () {
-    return view('user.service-1');
-});
-Route::get('/service-2', function () {
-    return view('user.service-2');
-});
-Route::get('/service-3', function () {
-    return view('user.service-3');
-});
-Route::get('/service-4', function () {
-    return view('user.service-4');
-});
+

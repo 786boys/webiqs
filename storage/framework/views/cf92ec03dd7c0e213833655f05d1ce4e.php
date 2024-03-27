@@ -1,12 +1,12 @@
-@extends('user.partisls.layout')
 
-@section('meta-title')
+
+<?php $__env->startSection('meta-title'); ?>
 - webiqs
-@endsection
-@section('meta-description')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('meta-description'); ?>
 - webiqs
-@endsection
-@section('data')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('data'); ?>
 
    <!-- tp-header-area-end -->
 
@@ -15,7 +15,7 @@
          <div class="row align-items-center">
             <div class="col-md-6 col-6">
                <div class="tp-logo">
-                  <a href="{{'/'}}"><img src="{{asset('user/assets/img/logo/logo-blue.png')}}" alt=""></a>
+                  <a href="<?php echo e('/'); ?>"><img src="<?php echo e(asset('user/assets/img/logo/logo-blue.png')); ?>" alt=""></a>
                </div>
             </div>
             <div class="col-md-6 col-6">
@@ -30,68 +30,24 @@
 
 
 
-   {{-- <div class="tp-offcanvas-area">
-      <div class="tpoffcanvas">
-         <div class="tpoffcanvas__logo">
-            <a href="{{'/'}}">
-               <img src="{{asset('user/assets/img/logo/logo-white.png')}}" alt="">
-            </a>
-         </div>
-         <div class="tpoffcanvas__close-btn">
-            <a class="close-btn" href="javascript:void(0)"><i class="fal fa-times-hexagon"></i></a>
-         </div>
-         <div class="tpoffcanvas__content d-none d-sm-block">
-            <p>We deploy world-class Creative <br> on demand.</p>
-         </div>
-         <div class="mobile-menu">
+   
 
-         </div>
-         <div class="tpoffcanvas__contact">
-            <span>Contact us</span>
-            <ul>
-               <li><i class="fas fa-star"></i> <a href="https://goo.gl/maps/abHegV4AoiJA6Syd8" target="_blank">Melbone
-                     st, Australia, Ny 12099</a></li>
-               <li><i class="fas fa-star"></i> <a href="tel:8180012345678">+81 800 123 456 78</a></li>
-               <li><i class="fas fa-star"></i> <a href="mailto:Collaxmail@gmail.com">Collaxmail@gmail.com</a></li>
-            </ul>
-         </div>
-         <div class="tpoffcanvas__input d-none d-sm-block">
-            <p>Get UPdate</p>
-            <form class="p-relative" action="#">
-               <input type="text" placeholder="Enter mail">
-               <button type="submit"><i class="fas fa-paper-plane"></i></button>
-            </form>
-         </div>
-         <div class="tpoffcanvas__instagram d-none d-sm-block">
-            <p>Check Instagram POst</p>
-           <div class="tp-insta">
-            <div class="row">
-               <div class="col-3 col-sm-3"><a href="#"><img src="{{asset('user/assets/img/offcanvas/insta-1.jpg')}}" alt=""></a></div>
-               <div class="col-3 col-sm-3"><a href="#"><img src="{{asset('user/assets/img/offcanvas/insta-2.jpg')}}" alt=""></a></div>
-               <div class="col-3 col-sm-3"><a href="#"><img src="{{asset('user/assets/img/offcanvas/insta-4.jpg')}}" alt=""></a></div>
-               <div class="col-3 col-sm-3"><a href="#"><img src="{{asset('user/assets/img/offcanvas/insta-4.jpg')}}" alt=""></a></div>
-            </div>
-           </div>
-         </div>
-      </div>
-   </div> --}}
-
-   {{-- <div class="body-overlay"></div> --}}
+   
 
    <main>
 
       <!-- breadcrumb area start -->
       <section class="breadcrumb__area  breadcrumb__pt-310 include-bg p-relative"
-         data-background="{{asset('user/assets/img/404/ab-1.1.jpg')}}">
+         data-background="<?php echo e(asset('user/assets/img/404/ab-1.1.jpg')); ?>">
          <div class="ac-about-shape-img z-index-1">
-            <img src="{{asset('user/assets/img/breadcrum/ab-shape-1.1.jpg')}}" alt="">
+            <img src="<?php echo e(asset('user/assets/img/breadcrum/ab-shape-1.1.jpg')); ?>" alt="">
          </div>
          <div class="container">
             <div class="row">
                <div class="col-xxl-12">
                   <div class="breadcrumb__content p-relative z-index-1">
                      <h3 class="breadcrumb__title">Details</h3>
-                      <a href="{{'contect'}}" class="tp-btn-white-border">Lets work together <i class="far fa-arrow-right"></i></a>
+                      <a href="<?php echo e('contect'); ?>" class="tp-btn-white-border">Lets work together <i class="far fa-arrow-right"></i></a>
                   </div>
                </div>
             </div>
@@ -106,7 +62,7 @@
             <div class="row">
                <div class="col-12">
                   <div class="cd-banner-img">
-                     <img src="{{asset('user/assets/img/personal portfolio/case-1.jpg')}}" alt="">
+                     <img src="<?php echo e(asset('user/assets/img/personal portfolio/case-1.jpg')); ?>" alt="">
                   </div>
                </div>
             </div>
@@ -173,7 +129,7 @@
             <div class="row">
                <div class="col-12">
                   <div class="cd-banner-img">
-                     <img src="{{asset('user/assets/img/personal portfolio/case-2.jpg')}}" alt="">
+                     <img src="<?php echo e(asset('user/assets/img/personal portfolio/case-2.jpg')); ?>" alt="">
                   </div>
                </div>
             </div>
@@ -200,7 +156,7 @@
 
 
       <!-- news-area-start -->
-      <div class="tp-news-letter-area tp-news-letter-bg pt-200 pb-150" data-background="{{asset('user/assets/img/news/news-bg.jpg')}}">
+      <div class="tp-news-letter-area tp-news-letter-bg pt-200 pb-150" data-background="<?php echo e(asset('user/assets/img/news/news-bg.jpg')); ?>">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-xl-8 col-lg-8 col-md-12 ">
@@ -210,7 +166,7 @@
                         <p class="text-white pb-35">We had the pleasure of being a partner for companies from markets like Fintech, Health, Government, Security, Big Data & many more.</p>
                      </div>
                      <div class="tp-news-button">
-                        <a class="tp-btn-lg-yellow" href="{{'contect'}}">Become a Partner</a>
+                        <a class="tp-btn-lg-yellow" href="<?php echo e('contect'); ?>">Become a Partner</a>
                      </div>
                   </div>
                </div>
@@ -223,4 +179,5 @@
 
    </main>
 
-   @endsection
+   <?php $__env->stopSection(); ?>
+<?php echo $__env->make('user.partisls.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\xampp\htdocs\authapp\resources\views/user/portfolio-details.blade.php ENDPATH**/ ?>

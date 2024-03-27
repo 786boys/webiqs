@@ -7,7 +7,7 @@
 <main id="main" class="main">
 
     
-    < <h2>Add Servises</h2>
+    <h2>Add Servises</h2>
     <form method="POST" 
     action="{{route('service.store')}}"
     enctype="multipart/form-data"

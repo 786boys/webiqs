@@ -41,7 +41,7 @@ class ServicesController extends Controller
         $service->description_fst = $req['f_dec'];
         $service->title_sec = $req['sec_title'];
         $service->description_sec = $req['sec_dec'];
-        // $service->image = $path;
+        $service->image = "hello";
         $service->meta_title = $req['sec_dec'];
         $service->mete_description = $req['sec_dec'];
         $service->save();

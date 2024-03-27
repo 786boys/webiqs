@@ -104,13 +104,19 @@
       <div class="tp-testimonial-area pt-130 pb-130 p-relative">
          <div class="container">
             <div class="row">
+
+               <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                   
+               
                <div class="col-xl-12 wow tpfadeUp" data-wow-duration="1s" data-wow-delay=".3s">
                   <div class="swiper-slide">
                      <div class="tp-testimonial-item-four testimonial-html-space mb-30">
                         <div
                            class="tp-testimonial-item-four__meta d-flex justify-content-between align-items-center mb-60">
-                           <div class="tp-testimonial-item-four__logo">
-                              <a href=""><img src="<?php echo e(asset('user/assets/img/testimonial/testi-brands-1.png')); ?>" alt=""></a>
+                           <div class="h3 text-dark">
+                              
+                             
+                              <strong><em> <?php echo e($item->name); ?></em></strong>
                            </div>
                            <div class="tp-testimonial-item-four__rating">
                               <span><i class="fas fa-star"></i></span>
@@ -121,226 +127,26 @@
                            </div>
                         </div>
                         <div class="tp-testi-paragraph pb-40">
-                           <p>One of the best designers that turns the client pain points and requests into magnificent
-                              designs. Aware of all the aspect that should be considered to fulfill the requirements in
-                              high-quality implementation as an expected end result. Has patience while receiving and
-                              confirming the requirements, conducting the wire frames and style guides and also creates
-                              great portoflios for their projects.</p>
+                           <p><?php echo e($item->about); ?></p>
                         </div>
                         <div class="tp-testimonial-item-four__client d-flex align-items-center">
                            <div class="mr-20">
-                              <img src="<?php echo e(asset('user/assets/img/testimonial/testi-4.2.png')); ?>" alt="">
+                               <img src="<?php echo e(asset('storage/'. $item->image)); ?>" width="100px" class="img-fluid" />
+
                            </div>
                            <div class="tp-testimonial-item-four__position">
-                              <h4 class="m-0">Leslie Alexander</h4>
-                              <span>P. Desiger of (Amazon)</span>
+                              <h4 class="m-0"><?php echo e($item->name); ?></h4>
+                              <span><?php echo e($item->companyName); ?></span>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="col-xl-12 wow tpfadeUp" data-wow-duration="1s" data-wow-delay=".5s">
-                  <div class="swiper-slide">
-                     <div class="tp-testimonial-item-four testimonial-html-space mb-30">
-                        <div
-                           class="tp-testimonial-item-four__meta d-flex justify-content-between align-items-center mb-60">
-                           <div class="tp-testimonial-item-four__logo">
-                              <a href=""><img src="<?php echo e(asset('user/assets/img/testimonial/testi-brands-2.png')); ?>" alt=""></a>
-                           </div>
-                           <div class="tp-testimonial-item-four__rating">
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                           </div>
-                        </div>
-                        <div class="tp-testi-paragraph pb-40">
-                           <p>Wow. What a great experience with this copywriter. Muhammad Noman is a very talented
-                              copywriter. yesterday I got his first Email that was amazing... experience with him Wow.
-                              What a great experience with this copywriter. Muhammad Noman is a very talented
-                           </p>
-                        </div>
-                        <div class="tp-testimonial-item-four__client d-flex align-items-center">
-                           <div class="mr-20">
-                              <img src="<?php echo e(asset('user/assets/img/testimonial/testi-4.5.png')); ?>" alt="">
-                           </div>
-                           <div class="tp-testimonial-item-four__position">
-                              <h4 class="m-0">Guy Hawkins</h4>
-                              <span>Ux Designer of (Godaddy)</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-12 wow tpfadeUp" data-wow-duration="1s" data-wow-delay=".7s">
-                  <div class="swiper-slide">
-                     <div class="tp-testimonial-item-four testimonial-html-space mb-30">
-                        <div
-                           class="tp-testimonial-item-four__meta d-flex justify-content-between align-items-center mb-60">
-                           <div class="tp-testimonial-item-four__logo">
-                              <a href=""><img src="<?php echo e(asset('user/assets/img/testimonial/testi-brands-2.png')); ?>" alt=""></a>
-                           </div>
-                           <div class="tp-testimonial-item-four__rating">
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                           </div>
-                        </div>
-                        <div class="tp-testi-paragraph pb-40">
-                           <p>Wow. What a great experience with this copywriter. Muhammad Noman is a very talented
-                              copywriter. yesterday I got his first Email that was amazing... experience with him Wow.
-                              What a great experience with this copywriter. Muhammad Noman is a very talented
-                           </p>
-                        </div>
-                        <div class="tp-testimonial-item-four__client d-flex align-items-center">
-                           <div class="mr-20">
-                              <img src="<?php echo e(asset('user/assets/img/testimonial/testi-4.1.png')); ?>" alt="">
-                           </div>
-                           <div class="tp-testimonial-item-four__position">
-                              <h4 class="m-0">Darrell Steward</h4>
-                              <span>Ux Designer of (Godaddy)</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-12 wow tpfadeUp" data-wow-duration="1s" data-wow-delay=".9s">
-                  <div class="swiper-slide">
-                     <div class="tp-testimonial-item-four testimonial-html-space mb-30">
-                        <div
-                           class="tp-testimonial-item-four__meta d-flex justify-content-between align-items-center mb-60">
-                           <div class="tp-testimonial-item-four__logo">
-                              <a href=""><img src="<?php echo e(asset('user/assets/img/testimonial/testi-brands-2.png')); ?>" alt=""></a>
-                           </div>
-                           <div class="tp-testimonial-item-four__rating">
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                           </div>
-                        </div>
-                        <div class="tp-testi-paragraph pb-40">
-                           <p>Wow. What a great experience with this copywriter. Muhammad Noman is a very talented
-                              copywriter. yesterday I got his first Email that was amazing... experience with him Wow.
-                              What a great experience with this copywriter. Muhammad Noman is a very talented
-                           </p>
-                        </div>
-                        <div class="tp-testimonial-item-four__client d-flex align-items-center">
-                           <div class="mr-20">
-                              <img src="<?php echo e(asset('user/assets/img/testimonial/testi-4.6.png')); ?>" alt="">
-                           </div>
-                           <div class="tp-testimonial-item-four__position">
-                              <h4 class="m-0">Dianne Russell</h4>
-                              <span>Founder of (Rirax)</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-12 wow tpfadeUp" data-wow-duration="1s" data-wow-delay="1s">
-                  <div class="swiper-slide">
-                     <div class="tp-testimonial-item-four testimonial-html-space mb-30">
-                        <div
-                           class="tp-testimonial-item-four__meta d-flex justify-content-between align-items-center mb-60">
-                           <div class="tp-testimonial-item-four__logo">
-                              <a href=""><img src="<?php echo e(asset('user/assets/img/testimonial/testi-brands-2.png')); ?>" alt=""></a>
-                           </div>
-                           <div class="tp-testimonial-item-four__rating">
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                           </div>
-                        </div>
-                        <div class="tp-testi-paragraph pb-40">
-                           <p>Wow. What a great experience with this copywriter. Muhammad Noman is a very talented
-                              copywriter. yesterday I got his first Email that was amazing... experience with him Wow.
-                              What a great experience with this copywriter. Muhammad Noman is a very talented
-                           </p>
-                        </div>
-                        <div class="tp-testimonial-item-four__client d-flex align-items-center">
-                           <div class="mr-20">
-                              <img src="<?php echo e(asset('user/assets/img/testimonial/testi-4.7.png')); ?>" alt="">
-                           </div>
-                           <div class="tp-testimonial-item-four__position">
-                              <h4 class="m-0">Robert Fox</h4>
-                              <span>P. Desiger of (Amazon)</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-12 wow tpfadeUp" data-wow-duration="1s" data-wow-delay="1.1s">
-                  <div class="swiper-slide">
-                     <div class="tp-testimonial-item-four testimonial-html-space mb-30">
-                        <div
-                           class="tp-testimonial-item-four__meta d-flex justify-content-between align-items-center mb-60">
-                           <div class="tp-testimonial-item-four__logo">
-                              <a href=""><img src="<?php echo e(asset('user/assets/img/testimonial/testi-brands-2.png')); ?>" alt=""></a>
-                           </div>
-                           <div class="tp-testimonial-item-four__rating">
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                              <span><i class="fas fa-star"></i></span>
-                           </div>
-                        </div>
-                        <div class="tp-testi-paragraph pb-40">
-                           <p>Wow. What a great experience with this copywriter. Muhammad Noman is a very talented
-                              copywriter. yesterday I got his first Email that was amazing... experience with him Wow.
-                              What a great experience with this copywriter. Muhammad Noman is a very talented
-                           </p>
-                        </div>
-                        <div class="tp-testimonial-item-four__client d-flex align-items-center">
-                           <div class="mr-20">
-                              <img src="<?php echo e(asset('user/assets/img/testimonial/testi-4.8.png')); ?>" alt="">
-                           </div>
-                           <div class="tp-testimonial-item-four__position">
-                              <h4 class="m-0">Bessie Cooper</h4>
-                              <span>P. Desiger of (Amazon)</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+
+               <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
             </div>
-            <div class="row">
-               <div class="container">
-                  <div class="col-xl-12">
-                     <div class="basic-pagination mt-30 text-center">
-                        <nav>
-                           <ul>
-                              <li>
-                                 <a href="<?php echo e('blog'); ?>">
-                                    <i class="far fa-angle-left"></i>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="<?php echo e('blog'); ?>">1</a>
-                              </li>
-                              <li>
-                                 <span class="current">2</span>
-                              </li>
-                              <li>
-                                 <a href="<?php echo e('blog'); ?>">3</a>
-                              </li>
-                              <li>
-                                 <a href="<?php echo e('blog'); ?>">
-                                    <i class="far fa-angle-right"></i>
-                                 </a>
-                              </li>
-                           </ul>
-                        </nav>
-                     </div>
-                  </div>
-               </div>
-            </div>
+            
          </div>
       </div>
       <!-- testimonial-area-end -->

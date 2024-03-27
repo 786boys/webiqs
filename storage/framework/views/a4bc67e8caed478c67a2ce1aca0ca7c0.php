@@ -90,8 +90,8 @@
             <div class="row">
                <div class="col-xxl-12">
                   <div class="breadcrumb__content p-relative z-index-1">
-                     <h3 class="breadcrumb__title">Portfolio</h3>
-                     <a href="<?php echo e('contect'); ?>" class="tp-btn-white-border">Lets work together <i class="far fa-arrow-right"></i></a>
+                     <h3 class="breadcrumb__title">About Collax</h3>
+                      <a href="<?php echo e('contect'); ?>" class="tp-btn-white-border">Lets work together <i class="far fa-arrow-right"></i></a>
                   </div>
                </div>
             </div>
@@ -99,47 +99,51 @@
       </section>
       <!-- breadcrumb area end -->
 
-   <!-- project-area-start -->
-   <div class="tp-project-area pt-120 pb-120 p-relative">
-      <div class="container-fluid p-0">
-         
 
-         <div class="row grid gx-0 port-space">
-            <?php $__currentLoopData = $value; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                
-          
-            <div class="col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat3">
-              <div class="bp-project-item p-relative">
-                  <div class="bp-project-img w-img fix">
-                   <img src="<?php echo e(asset('storage/'. $item->img)); ?>" class="img-fluid" />
+      <!--contact-area-start -->
+      <div class="tp-contact-area pt-135 pb-130">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 col-lg-6 ">
+                 <div class="tp-contct-wrapper contact-space-40">
+                  <div class="tp-contact-thumb mb-60">
+                     <img src="<?php echo e(asset('user/assets/img/contact/contact-1.jpg')); ?>" alt="">
                   </div>
-                  <div class="bp-project-item-link">
-                     <span>
-                         <a class="popup-image" href="<?php echo e(asset('storage/'. $item->img)); ?>">
-                           <svg width="107" height="107" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0.224823 95.4633L11.3577 106.62C11.8638 107.127 14.9002 107.127 15.406 106.62L80.1796 43.2308C81.1916 42.2165 82.2038 41.7093 83.7219 41.7093C84.228 41.7093 85.2402 41.7093 85.746 42.2165C87.7702 42.7236 88.7822 44.7521 88.7822 46.7805V78.7286V79.2358H104.976C105.988 79.2358 106.494 79.2358 107 79.2358V1.64818C107 1.64818 107 1.64819 105.988 0.633841C104.976 -0.380504 105.482 0.126918 104.47 0.126918H28.5633C28.5633 0.633841 28.5633 1.14101 28.5633 2.66253V18.3826C28.5633 19.3967 28.5633 20.4111 28.5633 20.4111H60.9501C62.9743 20.4111 64.9984 21.4252 65.5043 23.4536C66.5163 25.482 66.0104 27.5105 64.4923 29.032L1.23705 91.9136C0.730947 92.4208 0.224823 92.928 0.224823 93.9421C-0.281034 94.9561 0.224823 94.9562 0.224823 95.4633Z" fill="currentColor"/>
-                           </svg>
-                         </a>
-                     </span>
+                  <div class="tp-contact-info mb-40">
+                     <h4 class="contact-title">Mail Address</h4>
+                     <span><a href="mailto:(webmail@gmail.com)">(webmail@gmail.com)</a></span>
+                     <span><a href="mailto:(infoweb@gmail.com)">(infoweb@gmail.com)</a></span>
                   </div>
-              </div>
-            </div>
-            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-            
-         </div>
-         <div class="row g-0">
-            <div class="col-12">
-               <div class="tp-project-button text-center">
-                  <a class="tp-btn-yellow" href="<?php echo e("portfolioDetail"); ?>">Load More</a>
+                  <div class="tp-contact-info mb-40">
+                     <h4 class="contact-title">Phone Number</h4>
+                     <span><a href="tel:(+1255-568-6523)">(+1255 - 568 - 6523)</a></span>
+                     <span><a href="tel:(+1255-568-6523)">(+1255 - 568 - 6523)</a></span>
+                  </div>
+                  <div class="tp-contact-info">
+                     <h4 class="contact-title">Address line</h4>
+                     <span><a href="https://www.google.com/maps" target="blank">Bowery St, New York, NY 10013,USA. Bowery Steae</a></span>
+                  </div>
+                 </div>
+               </div>
+               <div class="col-xl-6 col-lg-6">
+                  <div class="tpcontact">
+                     <h4 class="tp-contact-big-title">Let’s Talk...</h4>
+                     <div class="tpcontact__form tpcontact__form-3">
+                        <form id="contact-form" action="assets/mail.php">
+                           <input name="name" type="text" placeholder="Enter your Name">
+                           <input name="email" type="email" placeholder="Enter your Mail">
+                           <textarea name="message" placeholder="Enter your Massage"></textarea>
+                        </form>
+                        <button type="submit" class="tp-btn-yellow">Send Massage</button>
+                     </div>
+                     <p class="ajax-response"></p>
+                  </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
-   <!-- project-area-end -->
-
+      <!-- contact-area-end -->
 
    </main>
-
    <?php $__env->stopSection(); ?>
-<?php echo $__env->make('user.partisls.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\xampp\htdocs\authapp\resources\views/user/portfolio.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('user.partisls.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\xampp\htdocs\authapp\resources\views/user/contact.blade.php ENDPATH**/ ?>

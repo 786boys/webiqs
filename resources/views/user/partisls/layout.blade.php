@@ -55,12 +55,8 @@
                            <li><a href="{{'/about'}}">About</a></li>
                            <li><a href="{{route('services.index')}}">Service</a></li>
                            {{-- 'service-1' --}}
-                           <li class=" "><a href="{{"/portfolio"}}">Portfolio</a> 
-                              {{-- <ul class="submenu text-start">
-                                 <li><a href="{{"portfolio"}}">Portfolio Full Width</a></li>
-                                 
-                                 <li><a href="{{"portfolioDetail"}}">Portfolio Details</a></li>
-                              </ul> --}}
+                           <li class=" "><a href="{{route('portfolios.index')}}">Portfolio</a> 
+                              
                            </li>
                            
                            <li class=" "><a href="{{'/blog'}}">Blog</a>
@@ -73,9 +69,9 @@
                            <li><a href="{{'/contect'}}">Contact</a></li>
                            <li class="has-dropdown has-menu"><a href="#">More</a>
                               <ul class="submenu text-start">
+                                 <li><a href="{{route('testimonials.index')}}">Testimonial</a></li>
                                  <li><a href="{{'/job'}}">Job</a></li>
                                  <li><a href="{{'/faq'}}">Faq</a></li>
-                                 <li><a href="{{'/testimonial'}}">Testimonial</a></li>
                                  {{-- <li><a href="{{'/about'}}">About</a></li> --}}
                                  {{-- <li><a href="{{'aboutme'}}">About Me</a></li> --}}
                                  {{-- <li><a href="{{'jobdetail'}}">Job Details</a></li> --}}
@@ -96,9 +92,9 @@
                   </div>
                </div>
                <div class="col-xl-2 col-lg-2">
-                  <div class="tp-menu-bar text-end">
+                  {{-- <div class="tp-menu-bar text-end">
                      <button><i class="fal fa-bars"></i></button>
-                  </div>
+                  </div> --}}
                </div>
             </div>
          </div>
